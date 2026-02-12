@@ -1,0 +1,53 @@
+---
+title: "A/B Testing and Average Treatment Effects in Political Communications"
+description: |
+  Simulating the A/B Test Data.
+author:
+  - name: Buti Alnuami
+date: 02-11-2026
+output:
+  distill::distill_article
+---
+
+The code below is used to simulate the data for political experiment. It is supposed that we have two groups of visitors of political party's site. Visitors of first group see the control homepage, while visitors of second group see issue-focused homepage. In turn, visitor of every group has certain probability of signing up as supporter (0.12 for control group and 0.17 for issue-focused group). The goal at this stage is too simulate 1,500 visitors and their decisions for every group using Bernoulli distribution. Basing on this data, we are going to detect mean signup rates for every group and visualize them.
+
+```{r}
+set.seed(2024)
+library(ggplot2)
+n <- 1500
+treatment <- rbinom(n = n, size = 1, prob = 0.5)
+p_control <- 0.12
+p_treated <- 0.17
+Y0 <- rbinom(n = n, size = 1, prob = p_control)
+Y1 <- rbinom(n = n, size = 1, prob = p_treated) 
+afford <- ifelse(treatment == 1, Y1, Y0)
+party_ab <- data.frame(
+  visitor_id     = 1:n,
+  treatment      = treatment,
+  support_signup = afford
+)
+mean_control <- mean(party_ab$support_signup[party_ab$treatment == 0])
+mean_treated <- mean(party_ab$support_signup[party_ab$treatment == 1])
+means_df <- data.frame(
+  treatment = c("Control homepage", "Issue-focused homepage"),
+  mean_signup = c(mean_control, mean_treated)
+  )
+ggplot(means_df, aes(x = treatment, y = mean_signup, fill = treatment)) +
+  geom_col(width = 0.6) +
+  geom_text(
+    aes(label = paste0(round(mean_signup * 100, 1), "%")),
+    vjust = -0.5
+  ) +
+  scale_y_continuous(limits = c(0, 0.25), expand = expansion(mult = c(0, 0.05))) +
+  scale_fill_manual(values = c("Control homepage" = "gray70",
+                                 "Issue-focused homepage" = "steelblue")) +
+  labs(
+    x = "Homepage version",
+    y = "Signup rate",
+    title = "Supporter signup rate by homepage version"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none", plot.title = element_text(hjust = 0.5))
+```
+
+As we can see, mean signup rate for issue-focused group is 16% and it is higher by 4.1 percentage points than mean signup rate for control group.

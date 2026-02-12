@@ -1,18 +1,9 @@
 ---
-title: "mfeo"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Buti Alnuaimi"
+image: "avatar.png"
 site: distill::distill_website
+output:
+  postcards::trestles
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
-```
-
+ 
+I am interested in applying statistical methods to real-world political and social questions. I enjoy working with R to simulate experiments, estimate causal effects, and communicate results through clear visualizations. My academic interests include experimental design, causal inference, and the ethical implications of data-driven decision-making. I focus on translating quantitative findings into plain-language insights for non-technical audiences. I am particularly interested in political behavior, public opinion, and digital campaign strategies. I aim to continue developing skills in regression modeling, experimental analysis, and responsible data use.

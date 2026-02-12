@@ -3,19 +3,25 @@
     {
       "path": "about.html",
       "title": "About this site",
-      "description": "Some additional details about the website",
+      "description": "I created this site using only R programming language (libraries distill, rmarkdown, and postcards).\nYou can find here information about me and visualization that was done with R for political project.",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2026-02-12T22:37:50+02:00"
+      "last_modified": "2026-02-12T22:41:48+02:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "Blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2026-02-12T22:41:48+02:00"
     },
     {
       "path": "index.html",
-      "title": "mfeo",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "title": "Buti Alnuaimi",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2026-02-12T22:37:51+02:00"
+      "contents": "\r\n\r\n          \r\n          \r\n          My R-Based Website\r\n          \r\n          \r\n          Home\r\n          About\r\n          Blog\r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Buti Alnuaimi\r\n            \r\n            \r\n              \r\n                \r\n            \r\n          \r\n        \r\n        \r\n        \r\n          \r\n            I am interested in applying statistical methods to\r\n            real-world political and social questions. I enjoy working\r\n            with R to simulate experiments, estimate causal effects, and\r\n            communicate results through clear visualizations. My\r\n            academic interests include experimental design, causal\r\n            inference, and the ethical implications of data-driven\r\n            decision-making. I focus on translating quantitative\r\n            findings into plain-language insights for non-technical\r\n            audiences. I am particularly interested in political\r\n            behavior, public opinion, and digital campaign strategies. I\r\n            aim to continue developing skills in regression modeling,\r\n            experimental analysis, and responsible data use.\r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n      \r\n        \r\n          \r\n            \r\n              \r\n            \r\n              Buti Alnuaimi\r\n            \r\n            \r\n              \r\n                \r\n                                  \r\n              \r\n            \r\n            \r\n              I am interested in applying statistical methods to\r\n              real-world political and social questions. I enjoy working\r\n              with R to simulate experiments, estimate causal effects,\r\n              and communicate results through clear visualizations. My\r\n              academic interests include experimental design, causal\r\n              inference, and the ethical implications of data-driven\r\n              decision-making. I focus on translating quantitative\r\n              findings into plain-language insights for non-technical\r\n              audiences. I am particularly interested in political\r\n              behavior, public opinion, and digital campaign strategies.\r\n              I aim to continue developing skills in regression\r\n              modeling, experimental analysis, and responsible data\r\n              use.\r\n            \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    ",
+      "last_modified": "2026-02-12T22:41:52+02:00"
     }
   ],
-  "collections": []
+  "collections": ["posts/posts.json"]
 }

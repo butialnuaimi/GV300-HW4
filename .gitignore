@@ -1,6 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
-.httr-oauth
+.Ruserdata
 .DS_Store
+.httr-oauth
 .quarto

@@ -1,12 +1,12 @@
-name: "."
-title: "mfeo"
-description: |
-  mfeo
+title: "My R-Based Website"
 output_dir: "docs"
+theme: postcards.css
 navbar:
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Blog"
+      href: blog.html
 output: distill::distill_article
